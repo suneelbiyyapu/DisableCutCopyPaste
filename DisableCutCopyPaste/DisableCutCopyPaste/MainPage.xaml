@@ -4,8 +4,18 @@
              xmlns:local="clr-namespace:DisableCutCopyPaste"
              x:Class="DisableCutCopyPaste.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand">
+        <Label Text="Bank Account Details" 
+               Font="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <local:CustomEntry Placeholder="Enter account number"
+                           HorizontalOptions="FillAndExpand"></local:CustomEntry>
+
+        <local:CustomEntry Placeholder="Re enter account number"
+                           HorizontalOptions="FillAndExpand"></local:CustomEntry>
+    </StackLayout>
 
 </ContentPage>
