@@ -18,7 +18,7 @@ namespace DisableCutCopyPaste.iOS
 
             if (Control != null)
             {
-                // Write your logic
+                // Write your logic if requires.
             }
         }
 
@@ -29,9 +29,6 @@ namespace DisableCutCopyPaste.iOS
             {
                 UIMenuController.SharedMenuController.SetMenuVisible(false, false);
             });
-
-            if (action.Name == "paste:" || action.Name == "copy:" || action.Name == "cut:")
-                return false;
 
             return base.CanPerform(action, withSender);
         }
